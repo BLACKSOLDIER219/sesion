@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Recuperar Contraseña</h2>
+    <form id="recoveryForm">
+      <input type="email" id="email" placeholder="Correo registrado" required />
+      <div class="password-container">
+        <input type="password" id="newPassword" placeholder="Nueva contraseña" required />
+        <button type="button" id="togglePassword">👁</button>
+      </div>
+      <span class="error" id="recoveryError"></span>
+      <button type="submit">Actualizar Contraseña</button>
+    </form>
+    <div id="successMessage" style="display:none; color:green;"></div>
+  </div>
+  <script src="../js/recovery.js"></script>
+</body>
+</html>

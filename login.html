@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <button type="button" id="togglePassword">👁</button>
+      </div>
+      <span class="error" id="loginError"></span>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+    <p><a href="recovery.html">¿Olvidaste tu contraseña?</a></p>
+    <div id="welcomeMessage" style="display:none;"></div>
+  </div>
+  <script src="../js/login.js"></script>
+</body>
+</html>
